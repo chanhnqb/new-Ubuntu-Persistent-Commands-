@@ -1,0 +1,21 @@
+sudo apt update && sudo apt upgrade -y 
+
+sudo add-apt-repository universe 
+
+sudo add-apt-repository multiverse
+
+
+## Modernized set for Ubuntu 22.04 for OpenWrt master, 22.03 and 21.02 branches that do not need python2.7 any more. Python3 is installed by default in Ubuntu22.04.
+
+sudo apt update
+sudo apt install build-essential clang flex g++ gawk gcc-multilib gettext \
+git libncurses5-dev libssl-dev python3-distutils rsync unzip zlib1g-dev
+
+
+## Older advice:
+sudo apt update
+sudo apt install build-essential ccache ecj fastjar file g++ gawk \
+gettext git java-propose-classpath libelf-dev libncurses5-dev \
+libncursesw5-dev libssl-dev python python2.7-dev python3 unzip wget \
+python-distutils-extra python3-setuptools python3-dev rsync subversion \
+swig time xsltproc zlib1g-dev 
